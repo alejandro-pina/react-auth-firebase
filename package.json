@@ -1,5 +1,5 @@
 {
-  "name": "skeleton-login",
+  "name": "react-auth-firebase",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
