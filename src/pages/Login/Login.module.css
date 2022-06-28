@@ -1,0 +1,14 @@
+.form_login_container
+{
+    max-width: 300px;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.link_user
+{
+    padding: var(--padding-container);
+    border: var(--border-default);
+    border-radius: var(--border-radius);
+}

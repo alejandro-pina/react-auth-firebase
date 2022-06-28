@@ -1,0 +1,15 @@
+.form_register_container
+{
+    max-width: 300px;
+    margin: auto;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.link_user
+{
+    padding: 16px 16px;
+    text-align: center;
+    border: var(--border-default);
+    border-radius: 6px;
+}

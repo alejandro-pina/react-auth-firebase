@@ -1,0 +1,54 @@
+/* ./navbar.module.css */
+.navbar {
+  display: var(--nav-display);
+  width: var(--nav-width);
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--nav-gap);
+  flex-direction: var(--nav-direction);
+}
+.navbar_links {
+  display: flex;
+  gap: var(--nav-gap);
+  margin: var(--nav-links-margin);
+}
+
+.navbar_link {
+  color: var(--nav-color-link);
+  background: var(--nav-color-link-bg);
+  text-decoration: var(--nav-color-link-decoration);
+}
+.navbar_link_active {
+  color: var(--nav-color-link-active);
+  background: var(--nav-color-link-active-bg);
+  text-decoration: var(--nav-color-link-active-decoration);
+}
+.navbar_link:hover {
+  color: var(--nav-color-link-action);
+  background: var(--nav-color-link-bg-action);
+}
+.navbar_link.active {
+  color: yellow;
+}
+.navbar_logo {
+  max-width: var(--nav-logo-width);
+}
+.navbar_btn_icon {
+  background: var(--nav-color-button-icon-bg);
+  fill: var(--nav-color-button-icon);
+}
+.navbar_btn_icon svg {
+  fill: var(--nav-color-button-icon);
+}
+.navbar_btn_icon:hover {
+  background: var(--nav-color-button-icon-bg-action);
+}
+.navbar_btn_icon:hover svg {
+  fill: var(--nav-color-button-icon-action);
+}
+
+.navbar_item_btn {
+  background: yellow;
+  border: none;
+  cursor: pointer;
+}

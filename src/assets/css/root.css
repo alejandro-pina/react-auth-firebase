@@ -1,0 +1,228 @@
+/*==================== NORMALIZE ====================*/
+@import url("./normalize.css");
+
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  /*========== Colors ==========*/
+  --hsl-primary-color: 45;
+  /* HSL color mode */
+  --color-primary: hsl(var(--hsl-primary-color), 70%, 60%);
+  --color-primary-second: hsl(var(--hsl-primary-color), 70%, 40%);
+  --color-primary-alt: hsl(var(--hsl-primary-color), 57%, 53%);
+  --color-primary-lighter: hsl(var(--hsl-primary-color), 92%, 85%);
+  --color-primary-contrasc: hsl(var(--hsl-primary-color), 92%, 95%);
+  --title-color: hsl(var(--hsl-primary-color), 8%, 15%);
+  --text-color: hsl(var(--hsl-primary-color), 8%, 45%);
+  --text-color-light: hsl(var(--hsl-primary-color), 8%, 65%);
+  --input-color: hsl(var(--hsl-primary-color), 70%, 96%);
+  --body-color: #fafafa;
+  --container-color: #fff;
+
+  /*========== GENERAL COLORS ==========*/
+  --color-dark: #333;
+  --color-gray-ligther: #9e9e9e;
+  --color-ligther: #f6f6f6;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark: #333;
+  --color-lighter: #e6e6e6;
+  --color-lighter-gray: #e2e3e5;
+  --color-lighter-white: #f1f1f1;
+  --color-gray: #383d41;
+  --color-success: #155724;
+  --color-danger: #721c24;
+  --color-warning: #856404;
+  --color-tomato: #d90000;
+  --color-menu-cat: rgba(59, 57, 53, 0.7);
+  --color-price-delete: #787878;
+  --color-wishlist: #838383;
+  --color-smoked-70: rgba(59, 57, 53, 0.7);
+  --color-smoked-40: rgba(59, 56, 50, 0.4);
+  --color-smoked-20: rgba(59, 57, 55, 0.2);
+
+  /*---- Others ----*/
+  --color-body: #f9f9f9;
+  --color-link: hsl(var(--color-hsl), 100%, 36%);
+  --color-title: hsl(var(--color-hsl), 8%, 15%);
+  --color-text: hsl(var(--color-hsl), 8%, 45%);
+  --color-text-lighter: hsl(var(--color-hsl), 8%, 65%);
+  --color-campo: hsl(var(--color-hsl), 70%, 96%);
+  --color-hover-menu: hsl(var(--color-hsl), 34%, 29%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /*==========    Border Radius    ==========*/
+  --border-radius: 4px;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  --m-0-25: 0.25rem;
+  --m-0-5: 0.5rem;
+  --m-0-75: 0.75rem;
+  --m-1: 1rem;
+  --m-1-5: 1.5rem;
+  --m-2: 2rem;
+  --m-2-5: 2.5rem;
+  --m-3: 3rem;
+
+  /*========== padding ==========*/
+  --padding-container: 15px;
+  --padding-input: 10px 10px;
+
+  /*---------------------------*/
+  /*------- Backgrounds -------*/
+  /*---------------------------*/
+  --background-white: #fff;
+  --background-black: #000;
+  --background-dark: #333;
+  --background-lighter: #fff;
+  --background-gray: #e2e3e5;
+  --background-primary: hsl(var(--color-hsl), 93%, 30%);
+  --background-success: #d4edda;
+  --background-danger: #f8d7da;
+  --background-warning: #fff3cd;
+  --background-tomato: #d90000;
+
+  /*========== LAYOUTS ==========*/
+  --container-padding-mobile-left: 5px;
+  --container-padding-mobile-right: 5px;
+
+  --container-xs: 540px;
+  --container-sm: 720px;
+  --container-md: 960px;
+  --container-lg: 1140px;
+  --container-xl: 1320px;
+
+  --container-media-xs: 576px;
+  --container-media-sm: 768px;
+  --container-media-md: 992px;
+  --container-media-lg: 1200px;
+  --container-media-xl: 1400px;
+
+  --container-padding-mobile: 15px;
+
+  /*========== borders ==========*/
+  --border-primary: 1px solid var(--color-primary);
+  --border-default: 1px solid var(--color-gray-ligther);
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  /*========== FIELDS ==========*/
+  --field-padding: var(--padding-input);
+  --field-bg: var(--color-ligther);
+  --field-border-color: var(--color-gray-ligther);
+  --field-color: var(--text-color);
+  --field-color-action: var(--text-color);
+  --field-bg-action: #fff;
+  --field-border-color-action: var(--color-gray-ligther);
+  --field-shadow: "";
+  --field-shadow-action: "";
+
+  /*========== BUTTONS ==========*/
+  --button-primary-padding: var(--padding-input);
+  --button-primary-color: #fff;
+  --button-primary-bg: var(--color-primary);
+  --button-primary-color-action: #fff;
+  --button-primary-bg-action: var(--color-primary-second);
+  --button-primary-border-color: var(--color-primary);
+  --button-primary-shadow: "";
+  --button-primary-border-color-action: var(--color-primary);
+  --button-primary-shadow-action: "";
+
+  --button-icon-color: var(--color-primary);
+  --button-icon-border: 1px solid transparent;
+  --button-icon-bg: transparent;
+  --button-icon-color-action: var(--color-primary);
+  --button-icon-border-action: 1px solid transparent;
+  --button-icon-bg-action: var(--color-primary-contrasc);
+
+  /*========== FORMS ==========*/
+  --form-padding: var(--padding-input);
+  --form-bg: #fff;
+  --form-border-color: var(--color-primary-lighter);
+  --form-color: var(--color-primary);
+  --form-color-action: #fff;
+  --form-bg-action: var(--color-primary-lighter);
+  --form-border-color-action: var(--color-primary);
+  --form-shadow: "";
+  --form-shadow-action: "";
+
+  /*========== HEADER ==========*/
+  --header-height: 3rem;
+  --header-bg: var(--color-dark);
+  --header-align-nav: center;
+  --header-padding: 0;
+
+  /*========== NAVBAR ==========*/
+  --nav-bg: var(--color-primary);
+  --nav-display: flex;
+  --nav-justify: space-between;
+  --nav-direction: space-between;
+  --nav-align: center;
+  --nav-gap: 1rem;
+  --nav-links-height: 100%;
+  --nav-links-margin: 0 auto 0 0;
+  /* left 0 0 0 auto - right 0 auto 0 0*/
+  --nav-logo-width: 30px;
+  --nav-width: 100%;
+  --nav-color-link: var(--color-primary);
+  --nav-color-link-decoration: "";
+  --nav-color-link-bg: transparent;
+
+  --nav-color-link-action: var(--color-primary-lighter);
+  --nav-color-link-bg-action: transparent;
+
+  --nav-color-link-active: var(--color-primary-lighter);
+  --nav-color-link-active-bg: transparent;
+  --nav-color-link-active-decoration: none;
+
+  --nav-color-button: var(--color-primary);
+  --nav-color-button-bg: var(--color-primary);
+  --nav-color-button-action: var(--color-primary-lighter);
+  --nav-color-button-bg-action: var(--color-primary);
+  --nav-color-button-icon: var(--color-primary);
+  --nav-color-button-icon-bg: transparent;
+
+  --nav-color-button-icon-action: var(--color-primary-second);
+  --nav-color-button-icon-bg-action: var(--body-color);
+
+  /*========== FOOTER ==========*/
+  --footer-height: 3rem;
+  --footer-color: #fafafa;
+  --footer-bg: var(--color-dark);
+  --footer-justify-nav: end;
+  --footer-align-nav: center;
+  --footer-padding: 0;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}

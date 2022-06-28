@@ -1,0 +1,11 @@
+.home_button_group
+{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.home_button_group button
+{
+    min-width: 150px;
+}

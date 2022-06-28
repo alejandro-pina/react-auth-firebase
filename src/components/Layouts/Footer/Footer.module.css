@@ -1,0 +1,18 @@
+.footer
+{
+  height: var(--footer-height);
+  background: var(--footer-bg);
+  color: var(--footer-color);
+}
+.footer_container
+{
+  padding: var(--footer-padding);
+  display: flex;
+  justify-content:var(--footer-justify-nav);
+  align-items:var(--footer-align-nav);
+  height: 100%;
+}
+.footer_copyr
+{
+  font-weight: bold;
+}

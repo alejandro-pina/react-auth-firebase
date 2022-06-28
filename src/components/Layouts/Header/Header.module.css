@@ -1,0 +1,9 @@
+.header_default
+{
+  display: flex;
+  background: var(--header-bg);
+  padding: var(--header-padding);
+  height: var(--header-height);
+  align-items: var(--header-align-nav);
+  padding: var(--header-padding);
+}
